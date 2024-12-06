@@ -54,7 +54,7 @@ ROOT_URLCONF = 'djangojokes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'], # telling Django to look in templates folder when searching for templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
